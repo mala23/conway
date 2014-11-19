@@ -41,4 +41,9 @@ describe "Rule one" do
     apply_rule_one = cell < live_neighbours
     expect(apply_rule_one).to eq live
   end
+  
+  it 'can apply rule one' do
+    cell = Cell.new
+    expect(cell).class.to be cell
+  end
 end
