@@ -33,4 +33,12 @@ describe "Rule one" do
     apply_rule_one = cell < live_neighbours
     expect(apply_rule_one).to eq death
   end
+  it 'when we apply rule one on two cells with less than two neighbours they will live' do
+    live_neighbours = 2
+    death = true
+    live = false
+    cell = 2
+    apply_rule_one = cell < live_neighbours
+    expect(apply_rule_one).to eq live
+  end
 end
